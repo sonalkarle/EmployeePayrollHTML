@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../css/Registration.css">
+    <link rel= "stylesheet" href="../css/Dashboard.css">
+    <script src ="../JS/Register.js"></script>
+    <title>employee registration</title>
+</head>
+<body>
+    <div class = "box2">
+ <div class = "box1">
+  <header class="header-content header">
+    <div class="logo-content">
+      <img src="../Assert/logo.JPG" alt = "logo">
+      <div>
+        <span class="emp-text">EMPLOYEE</span></br>
+        <span class="emp-text emp-payroll">PAYROLL</span>
+      </div>
+    </div>
+  </header>
+  </div>
+
+  <div class="box">
+       
+    <form class="form" id="registerform" action="#" onsubmit="return register(event)">  
+        <div class="flexBox">
+           <h1> <span id="Emptxt">Employee payroll form</h1></span>
+        </div>
+       
+            
+            <div class="flexBox">
+                <label class="label" for="name">Name:</label>
+                <input type="text" id="fullname" name="fullname" pattern="[A-Za-z]{3,50}">
+            </div>
+            <div class="flexBox1">
+                <label class="left-label" for="profileImage">Profile:</label>
+                <input class="radio" type="radio" id="profileImg1" name="profileImg" value="..\..\img\profileImg1.PNG">
+                <img src="../Assert/Image1.jfif" class="profileimage">
+                <input class="radio" type="radio" id="profileImg2" name="profileImg" value="..\..\img\profileImg2.PNG">
+                <img src="../Assert/Image2.jpg" class="profileimage">
+                <input class="radio" type="radio" id="profileImg3" name="profileImg" value="..\..\img\profileImg3.PNG">
+                <img src="../Assert/images3.jfif" class="profileimage">
+                <input class="radio"  type="radio" id="profileImg4" name="profileImg" value="..\..\img\profileImg4.PNG">
+                <img src="../Assert/images4.jfif" class="profileimage">
+            </div>
+            <div class="flexBox">
+                <label class="left-label">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label class="right-label" for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label class="right-label" for="female">Female</label>
+            </div>
+            <div class="flexBox">
+                <label class="left-label">Department:</label>
+                <input type="checkbox" id="HR" name="department" value="HR"><label class="right-label">HR</label>
+                <input type="checkbox" id="Sales" name="department" value="Sales"><label class="right-label">Sales</label>
+                <input type="checkbox" id="Finance" name="department" value="Finance"><label class="right-label">Finance</label>
+                <input type="checkbox" id="Engineer" name="department" value="Engineer"><label class="right-label">Engineer</label>
+                <input type="checkbox" id="Others" name="department" value="Others"><label class="right-label">Others</label>
+            </div>
+            <div class="flexBox">
+                <label class="left-label" for="salary">Salary:</label>
+                <select name="salary" id="salary">
+                    <option>Select Salary</option>
+                    <option value="15000">15000</option>
+                    <option value="20000">20000</option>
+                    <option value="25000">25000</option>
+                    <option value="30000">30000</option>
+                </select>
+            </div>
+            <div class="flexBox">
+                <label class="left-label" for="start date">Startdate:</label>
+                <select name="day" id="day">
+                    <option>Day</option>
+                    <option value='01'>01</option>
+                    <option value='02'>02</option>
+                    <option value='03'>03</option>
+                    <option value='04'>04</option>
+                    <option value='05'>05</option>
+                    <option value='06'>06</option>
+                    <option value='07'>07</option>
+                    <option value='08'>08</option>
+                    <option value='09'>09</option>
+                    <option value='10'>10</option>
+                    <option value='11'>11</option>
+                    <option value='12'>12</option>
+                    <option value='13'>13</option>
+                    <option value='14'>14</option>
+                    <option value='15'>15</option>
+                    <option value='16'>16</option>
+                    <option value='17'>17</option>
+                    <option value='18'>18</option>
+                    <option value='19'>19</option>
+                    <option value='20'>20</option>
+                    <option value='21'>21</option>
+                    <option value='22'>22</option>
+                    <option value='23'>23</option>
+                    <option value='24'>24</option>
+                    <option value='25'>25</option>
+                    <option value='26'>26</option>
+                    <option value='27'>27</option>
+                    <option value='28'>28</option>
+                    <option value='29'>29</option>
+                    <option value='30'>30</option>
+                    <option value='31'>31</option>
+                    </select>
+                    
+                   
+                   
+                </select>
+                <select  name="month" id="month">
+                    <option>Month</option>  
+                    <option value='01'>January</option>
+                    <option value='02'>February</option>
+                    <option value='03'>March</option>
+                    <option value='04'>April</option>
+                    <option value='05'>May</option>
+                    <option value='06'>June</option>
+                    <option value='07'>July</option>
+                    <option value='08'>August</option>
+                    <option value='09'>September</option>
+                    <option value='10'>October</option>
+                    <option value='11'>November</option>
+                    <option value='12'>December</option>
+                </select>
+                <select name="year" id="year">
+                    <option>Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                </select>
+            </div>
+            <div class="flexBox">
+                <label class="left-label" for="Notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="3" cols="30"></textarea></td>
+            </div>
+            <div class="flexBox">
+                <input class="btn" id="cancel" type="button" name="cancel" value="cancel">
+                <input class="btn" type="submit" id="submit-form">
+                <input class="btn" id="reset" onclick="resetFields()" type="reset">  
+            
+            </div>
+        </form>
+       </div>
+       </div>
+    
+</body>
+</html>

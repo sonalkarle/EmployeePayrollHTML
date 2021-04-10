@@ -1,0 +1,92 @@
+.flexBox {
+    box-sizing: border-box;
+    font-size: 80%;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3%;
+}
+
+.form {
+    margin-left: 7%;
+    margin-top: -1%;
+    margin-right: 7%;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+}
+table{
+    border-spacing: 1 3px;
+      border: none;
+      margin-left: 4%;
+    margin-right: auto;
+      width: 99%;
+      font-size: 60%;   
+      border: none;
+  }
+  th{text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font: normal normal medium 18px/24px Roboto;
+    padding-left: 5px;
+    height: 40px;
+    color: white;
+    background-color: #42515F;
+}
+  td{
+    padding-left: 5px;
+  }
+  tr{
+    color: #3D3D3D;
+    opacity: 1;
+  
+    height: 33px;
+    background-color: white;
+  }
+  .dot {
+    background: #e3e3e3;
+    color: #6e6e6e;
+    display: inline-block;
+    background-color: #E9FEA5;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+  }
+  .fa{
+  width: max-content;
+    height: max-content;
+  }
+  .trash-btn,
+  .trash-btn:focus,
+  .trash-btn:active:focus,
+  .trash-btn.active:focus,
+  .trash-btn.focus,
+  .trash-btn:active.focus,
+  .trash-btn.active.focus{
+    font-size: 15px;
+    background: transparent;
+    border: none;
+  }
+  .fa-trash-o:focus{
+    color: red;
+  }
+  .tr-btn, .edit-btn {
+  height: 10px;
+  width: 10px;
+  outline:none;
+    background: transparent;
+    border: none;
+    color: gray;
+    margin-right: 30%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .tr-btn:hover {
+    color: red;
+  }
+  .edit-btn:hover {
+  
+    color: blue;
+  }
