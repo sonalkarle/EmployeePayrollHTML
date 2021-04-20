@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>employee registration</title>
-    <link rel="icon" href="../Assert/logo.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="../css/Registration.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/Dashboard.css">
-
+    <script src  ="../JS/Update.js"></script>
+    <script src="../JS/dashboard.js"></script>
+    
+<div class ="Box2">
 </head>
 <body>
+  <div class = "box1">
     <header class="header-content header">
         <div class="logo-content">
           <img src="../Assert/logo.JPG" alt = "logo">
@@ -19,17 +23,19 @@
             <span class="emp-text emp-payroll">PAYROLL</span>
           </div>
         </div>
-      </header>   
-      <form class="form" id="registerform" action="#" onsubmit="return register(event)">  
+      </header>  
+    </div> 
+      <form class="form" id="registerform" action="#">  
         <div class="flexBox">
             <span id="Emptxt">Employee Details</span>
         </div>
-
+               
        <table id="emp-table" cellspacing="0" cellpadding="0">
            
            <tbody>
             <tr>
                 
+                <th></th>
                 <th>NAME</th>
                 <th>GENDER</th>
                 <th>DEPARTMENT</th>
@@ -42,4 +48,5 @@
        </table>
   
 </body>
+</div>
 </html>

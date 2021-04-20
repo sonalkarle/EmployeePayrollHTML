@@ -1,30 +1,79 @@
-.flexBox {
-    box-sizing: border-box;
-    font-size: 80%;
-    text-align: center;
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
-    padding: 3%;
+.header{
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+.header-content{
+  display: flex;
+  justify-self: center;
+  
+  
+}
+.box1{
+  top: 0px;
+left: 0px;
+width: 1894px;
+height: 91px;
+/* background: #FFFFFF 0% 0% no-repeat padding-box; */
+/* opacity: 1; */
+
+}
+.logo-content
+{
+  display: flex;
+  align-items: center;
+  border: 0px solid green;
+  
+}
+span#Emptxt{
+  font: normal normal bold 20px/25px Roboto;
+    
+    color: #42515F;
+    opacity: 1;
+    margin-left: 2%;
+}
+img{
+  width: 2em;
+  
+  
+}
+.Box2{
+  top: 0px;
+left: 0px;
+width: 1920px;
+height: 1080px;
+background: #F7F7F7 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
-.form {
-    margin-left: 7%;
-    margin-top: -1%;
-    margin-right: 7%;
-    margin-bottom: 5%;
-    padding-bottom: 2%;
+.form
+{
+  padding-bottom: 31%;
+  padding-left: 7%;
+}
+.emp-text
+{
+  font:normal normal bold 14px/13px Montserrat;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0px;
+  color: #82a78c;
+  text-transform: capitalize;
+
+}
+.emp-payroll
+{
+  color: #42515f;
 }
 table{
-    border-spacing: 1 3px;
-      border: none;
-      margin-left: 4%;
-    margin-right: auto;
-      width: 99%;
-      font-size: 60%;   
-      border: none;
-  }
-  th{text-align: left;
+  border-spacing:0 3px;
+    border: none;
+    margin-top: 1%;
+    margin-left: 2%;
+  margin-right: auto;
+    width: 50%;
+    font-size: 60%;   
+    border: none;
+}
+th{text-align: left;
     text-transform: uppercase;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -35,26 +84,64 @@ table{
     color: white;
     background-color: #42515F;
 }
-  td{
-    padding-left: 5px;
+td{
+  padding-left: 5px;
+}
+tr{
+  color: #3D3D3D;
+  opacity: 1;
+
+  height: 33px;
+  background-color: white;
+}
+.dot {
+  background: #e3e3e3;
+  color: #6e6e6e;
+  display: inline-block;
+  background-color: #E9FEA5;
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px;
+}
+.tr-btn, .edit-btn {
+  height: 10px;
+  width: 10px;
+  outline:none;
+    background: transparent;
+    border: none;
+    color: gray;
+    margin-right: 30%;
+    /* padding: 12px 16px; */
+    font-size: 16px;
+    cursor: pointer;
   }
-  tr{
-    color: #3D3D3D;
-    opacity: 1;
+  .tr-btn:hover {
+    color: red;
+  }
+  .edit-btn:hover {
   
-    height: 33px;
-    background-color: white;
+    color: blue;
   }
-  .dot {
-    background: #e3e3e3;
-    color: #6e6e6e;
-    display: inline-block;
-    background-color: #E9FEA5;
-    text-align: center;
-    padding: 2%;
-    border-radius: 20px;
-  }
-  .fa{
+
+.delete {
+  top: 600px;
+left: 1634px;
+width: 25px;
+height: 25px;
+background: #658292 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.update {
+  top: 344px;
+left: 1634px;
+width: 25px;
+height: 25px;
+background: #658292 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.fa{
   width: max-content;
     height: max-content;
   }
@@ -71,22 +158,4 @@ table{
   }
   .fa-trash-o:focus{
     color: red;
-  }
-  .tr-btn, .edit-btn {
-  height: 10px;
-  width: 10px;
-  outline:none;
-    background: transparent;
-    border: none;
-    color: gray;
-    margin-right: 30%;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .tr-btn:hover {
-    color: red;
-  }
-  .edit-btn:hover {
-  
-    color: blue;
   }

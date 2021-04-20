@@ -7,9 +7,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-    <link rel="stylesheet" href="../css/Registration.css">  
-   
-    <script src ="../JS/Register.js"></script>
+    <link rel="stylesheet" href="../css/Registration.css"> 
+    <script src = "../JS/Register.js"></script>
+    
+   <script src = "../JS/dashboard.js"></script>
+    <script src ="../JS/Update.js"></script>
    
     <title>employee registration</title>
        
@@ -19,21 +21,21 @@
     <div class = "box2">
  <div class = "box1">
   <header class="header-content header">
-   
+    <div class="logo-content">
       <img src="../Assert/logo.JPG" alt = "logo">
       <div>
         <span class="emp-text">EMPLOYEE</span></br>
         <span class="emp-text emp-payroll">PAYROLL</span>
       </div>
-    
+    </div>
   </header>
   </div>
 
   <div class="box">
        
-    <form class="form" id="registerform" action="#" onsubmit="return register(event)">  
+    <form class="form" id="Updateform" action="#" onsubmit="return update(event)">  
         <div class="flexBox">
-           <h1> <span id="Emptxt">Employee payroll form</h1></span>
+           <h1> <span id="Emptxt">Employee payroll Edit form</h1></span>
         </div>
        
             
@@ -59,10 +61,10 @@
                 <input type="radio" id="female" name="gender" value="F">
                 <label class="right-label" for="female">Female</label>
             </div>
-            <div class="flexBox">
-                <label class="left-label">Department:</label>
+            <div class="flex">
+                <label class="dep">Department:</label>
                 <input type="checkbox" id="HR" name="department" value="HR"><label class="right-label">HR</label>
-                <input type="checkbox" id="Sales" name="department" value="Sales"><label class="right-label">Sales</label>
+                <input type="checkbox" id="Sales" name="department" value="Sale"><label class="right-label">Sale</label>
                 <input type="checkbox" id="Finance" name="department" value="Finance"><label class="right-label">Finance</label>
                 <input type="checkbox" id="Engineer" name="department" value="Engineer"><label class="right-label">Engineer</label>
                 <input type="checkbox" id="Others" name="department" value="Others"><label class="right-label">Others</label>
@@ -75,17 +77,17 @@
             </div>
             <div class="flexBox">
                 <label class="left-label" for="start date">Startdate:</label>
-                <select id="start-date-day" name="day" id="day">
+                <select id="start-date-day" name="day" >
                     <option value="0">Day</option>
                     </select>
                     
                    
                    
                 </select>
-                <select id="start-date-month" name="month" id="month">
+                <select id="start-date-month" name="month" >
                     <option value="0">Month</option>  
                 </select>
-                <select  id="start-date-year" name="year" id="year">
+                <select  id="start-date-year" name="year" >
                     <option value="0">Year</option>
                 </select>
             </div>
@@ -95,14 +97,14 @@
             </div>
             <div class="flexBox">
                 <input class="btn" id="cancel" type="button" name="cancel" value="cancel">
-                <input class="btn" type="submit" id="submit-form">
+                <input class="btn"id="submit-form"  type="submit"  value= 'Update'>
                 <input class="btn" id="reset" onclick="resetFields()" type="reset">  
             
             </div>
         </form>
        </div>
        </div>
-       <div id="snackbar">registering employee..</div>
+       <div id="snackbar">Updating employee details..</div>
     
 </body>
 </html>

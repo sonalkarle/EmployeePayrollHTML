@@ -1,58 +1,73 @@
 .header{
     padding: 20px 0;
     background-color: #ffffff;
-}
-.header-content{
+    margin-right: 10%;
+  }
+  .header-content{
     display: flex;
     justify-self: center;
+    margin-right: 10%;
     
     
-}
-.logo-content
-{
+  }
+  .box1{
+    top: 0px;
+  left: 0px;
+  width: 1894px;
+  height: 91px;
+  /* background: #FFFFFF 0% 0% no-repeat padding-box; */
+  /* opacity: 1; */
+ 
+  }
+  .logo-content
+  {
     display: flex;
     align-items: center;
     border: 0px solid green;
-}
-img{
+    
+  }
+ 
+  img{
     width: 2em;
     
-}
-
-
-.emp-text
-{
+    
+  }
+  
+  .emp-text
+  {
     font:normal normal bold 14px/13px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
     color: #82a78c;
     text-transform: capitalize;
-
-}
-.emp-payroll
-{
+  
+  }
+  .emp-payroll
+  {
     color: #42515f;
-}
+  }
 
 body{
     background-color: #F7F7F7;
 }
 
 html,body { 
-    height:80%; 
+    height:100%; 
     font:normal normal normal 18px/13px Roboto;
     letter-spacing: 0px;
     
 }
 .profileimage-text{
     font:normal normal normal 16px/13px Roboto;
-    letter-spacing: 0px;
+    letter-spacing:0 px;
+    height: 15%;
 }
 .profileimage{
     display: inline-block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    padding: 3%;
   
     background-repeat: no-repeat;
     background-position: center center;
@@ -68,7 +83,8 @@ html,body {
     flex-direction: row;
     display: flex;
     justify-content: flex-start;
-    padding: 2%;
+    padding:3%;
+
     
     /* 
     border: 1px solid green; 
@@ -86,9 +102,10 @@ html,body {
 .lable{
     font-size: 40%;   
 }
+
 .right-label{
-    padding-top: 1px;
-    padding-right: 5px;
+    padding-top: 2px;
+    padding-right: 10px;
     font-size: 90%;
     color: rgb(56, 56, 56);
 }
@@ -123,14 +140,35 @@ select#salary{
    opacity: 1;
    
 }
-.box1{
-   
-    margin-left: 7%;
-    margin-right: 3%;
-    margin-top: 3%;
-    top: 0px;
 
- }
+
+@media screen and (max-width : 1200px){
+  body{
+      background-color: olive;
+  }
+  .flexBox1{
+  
+    font-size: 83%;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10%;
+    
+}
+html,body { 
+  height:100%; 
+  font:normal normal normal 18px/13px Roboto;
+  letter-spacing: 0px;
+  
+}
+.right-label{
+  padding-top: 2px;
+  padding-right: 10px;
+  font-size: 90%;
+  color: rgb(56, 56, 56);
+}
+}
+
+
  
 .left-label {
     width: 25%; 
@@ -142,10 +180,11 @@ select#salary{
 }
 .radio{
     margin-block: auto; 
+    padding: 1%;
 }
 .form{
     margin-left: 7%;
-    margin-top: 25%;
+    margin-top: 3%;
     margin-right: 7%;
     margin-bottom: 5%;
      padding-bottom: 5%;    
@@ -165,15 +204,49 @@ margin-right: auto;
 input[type="submit"]{
     margin-right: 5%;
 } 
+input[type="Update"]{
+  margin-right: 5%;
+} 
+
 
 #Emptxt{
     margin-top: 3%;
- color: gray;
+ color: #42515F;
     font-size: 95%;
     font-weight: bold;
     font:normal normal bold 16px/13px Roboto;
 }
-
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin-top: 10%;
+    margin-left: 35%;
+    background-color: #fefefe;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 20%;
+  }
+  .modal-content p{
+    color: rgb(0, 123, 172);
+    font-size: 150%;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
   #close{
       display: none;
   }
@@ -192,6 +265,59 @@ input[type="submit"]{
 #submit-form:hover, #submit-form:focus{
     background-color: rgb(0, 180, 0);
 }
+#Update-form:hover, #Update-form:focus{
+  background-color: rgb(0, 180, 0);
+}
 .btn:hover, #reset:hover, #reset:hover{
     background-color: gray;
 }
+#snackbar {
+    width: 15%;
+    height: 7%;
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(212, 212, 212); /* Black background color */
+    color: rgb(0, 0, 0); /* White text color */
+    text-align: center; /* Centered text */
+    font-size: 120%;
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    top:50%;
+    border: 5px;
+  }
+  #snackbar.show {
+    border: 1px solid black;
+    border-radius: 3px; /* Rounded borders */
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    /* -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; */
+    /* animation: fadein infinite */
+    /* , fadeout 0.5s 2.5s; */
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 50%; opacity: 0;}
+    to {bottom: 50%; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 50%; opacity: 1;}
+    to {bottom: 50%; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 50%; opacity: 1;}
+    to {bottom: 50%; opacity: 0;}
+  }
+
+ 
